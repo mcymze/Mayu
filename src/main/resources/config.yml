@@ -1,0 +1,5 @@
+allowTools:
+  IRON_PICKAXE:
+    - COAL_ORE
+consume: false
+enable: true

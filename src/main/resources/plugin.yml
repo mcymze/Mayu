@@ -1,0 +1,25 @@
+name: Mayu
+version: 1.0.0
+main: blue.feelingso.mayu.Mayu
+commands:
+  mayu:
+    aliases: [ma]
+    description: Not henzawa #comiga_anime
+    usage: Not henzawa #comiga_anime
+    permission: mayu.mine
+permissions:
+  mayu.*:
+    default: op
+    children:
+      mayu.mine: true
+      mayu.reload: true
+      mayu.switch: true
+  mayu.mine:
+    default: true
+    description: Mining feature
+  mayu.reload:
+    default: op
+    description: reload configure
+  mayu.switch:
+    default: op
+    description: switch enable status
