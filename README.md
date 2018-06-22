@@ -5,7 +5,6 @@ MineAllのような感じのSpigotPlugin
 ## TODO
 
 - 幸運のエンチャントに対応する
-- コンフィグのリロード (現在は/reloadすればとりあえず再読込できる状況)
 
 ## できること
 
@@ -13,6 +12,7 @@ MineAllのような感じのSpigotPlugin
 - config.ymlで上記の設定をする
 - シルクタッチで掘った場合その功績ブロックを落とす
 - スニーク中に無効にする
+- config.ymlのリロード (/mayu reload)
 
 ## そのた
 

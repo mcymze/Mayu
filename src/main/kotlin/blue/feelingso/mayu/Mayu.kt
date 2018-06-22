@@ -9,6 +9,7 @@ class Mayu : JavaPlugin() {
         logger.info("hello")
         saveDefaultConfig()
         server.pluginManager.registerEvents(MayuListener(this), this)
+        getCommand("mayu").executor = MayuCommandExecutor(this)
     }
 
     override fun onDisable() {
