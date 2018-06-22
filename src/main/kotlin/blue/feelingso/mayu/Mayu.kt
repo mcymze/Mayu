@@ -14,11 +14,15 @@ class Mayu : JavaPlugin() {
     override fun onDisable() {
     }
 
-    public fun reload() {
+    fun reload() {
         reloadConfig()
     }
 
-    public fun getConf() : FileConfiguration {
+    fun getConf() : FileConfiguration {
         return config
+    }
+
+    fun log(str :String) {
+        logger.info(str)
     }
 }

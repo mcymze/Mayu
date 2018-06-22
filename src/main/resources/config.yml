@@ -1,5 +1,12 @@
 allowTools:
+  STONE_PICKAXE:
+    - COAL_ORE
+    - IRON_ORE
   IRON_PICKAXE:
+    - COAL_ORE
+    - IRON_ORE
+  DIAMOND_PICKAXE:
+    - IRON_ORE
     - COAL_ORE
 consume: false
 enable: true
