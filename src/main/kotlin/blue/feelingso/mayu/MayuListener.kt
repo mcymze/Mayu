@@ -27,7 +27,7 @@ class MayuListener(_mayu: Mayu) : Listener {
         if (player.isSneaking) return
 
         // ブロックとツールが対象かチェック
-        if (!mayu.getConf().getStringList("allowTools.${tool.type.toString()}").contains(block.type.toString())) return
+        if (!mayu.getConf().getStringList("allowTools.${tool.type}").contains(block.type.toString())) return
 
         // 掘り開始
         val count = mineRecursively(block, tool)
