@@ -1,4 +1,4 @@
-name: Execute Gradle task
+name: ExecuteGradleTasks
 
 on: [push, pull_request]
 
