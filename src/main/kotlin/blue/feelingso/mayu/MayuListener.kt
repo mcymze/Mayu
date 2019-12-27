@@ -41,7 +41,7 @@ class MayuListener(_mayu :Mayu) : Listener {
         if (cnt < 0) return 0
         val type = block.type.toString()
         var count = 0
-        breakBlock(block, tool)
+        block.breakNaturally(tool)
         for (x in -1..1) {
             for (y in -1..1) {
                 for (z in -1..1)
@@ -56,20 +56,5 @@ class MayuListener(_mayu :Mayu) : Listener {
         }
 
         return count + 1
-    }
-
-    private fun breakBlock(block :Block, tool :ItemStack) {
-        // シルクタッチつき
-        if (tool.enchantments.containsKey(Enchantment.SILK_TOUCH))
-        {
-            block.world.dropItem(block.location, ItemStack(block.type))
-            block.breakNaturally(ItemStack(Material.AIR))
-
-            // 同じブロックを落とす
-        }
-        else
-        {
-            block.breakNaturally(tool)
-        }
     }
 }
