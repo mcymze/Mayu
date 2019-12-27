@@ -69,12 +69,7 @@ class MayuListener(_mayu :Mayu) : Listener {
         }
         else
         {
-            // fortuneの場合複数回る．．．と思っていたのですが．．．
-            for (drop in block.getDrops(tool))
-            {
-                block.world.dropItem(block.location, drop)
-            }
-            block.breakNaturally(ItemStack(Material.AIR))
+            block.breakNaturally(tool)
         }
     }
 }
