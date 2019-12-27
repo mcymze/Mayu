@@ -1,5 +1,7 @@
 # Mayu
 
+[![Actions Status](https://github.com/ekuinox/Mayu/workflows/Gradle%20tasks/badge.svg)](https://github.com/ekuinox/Mayu/actions)
+
 MineAllのような感じのSpigotPlugin
 
 ## TODO
