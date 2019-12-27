@@ -1,8 +1,6 @@
 package blue.feelingso.mayu
 
-import org.bukkit.Material
 import org.bukkit.block.Block
-import org.bukkit.enchantments.Enchantment
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.block.BlockBreakEvent
