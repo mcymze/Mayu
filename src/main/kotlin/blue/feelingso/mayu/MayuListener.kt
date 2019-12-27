@@ -8,11 +8,11 @@ import org.bukkit.event.Listener
 import org.bukkit.event.block.BlockBreakEvent
 import org.bukkit.inventory.ItemStack
 
-class MayuListener(_mayu :Mayu) : Listener {
+class MayuListener(_mayu: Mayu) : Listener {
     private val mayu = _mayu
 
     @EventHandler
-    fun onBlockBroken(ev : BlockBreakEvent) {
+    fun onBlockBroken(ev: BlockBreakEvent) {
         val player = ev.player
         val block = ev.block
         val tool = player.inventory.itemInMainHand
@@ -37,7 +37,7 @@ class MayuListener(_mayu :Mayu) : Listener {
         if (tool.type.maxDurability < tool.durability) player.inventory.remove(tool)
     }
 
-    private fun mineRecursively(block :Block, tool :ItemStack, cnt :Int = 20) : Int {
+    private fun mineRecursively(block: Block, tool: ItemStack, cnt: Int = 20): Int {
         if (cnt < 0) return 0
         val type = block.type.toString()
         var count = 0
